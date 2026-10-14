@@ -1,0 +1,135 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap:10px;
+  padding: 10px;
+  text-align: center;
+  grid-template-areas:
+  "header header header header header header"
+  "button button button button button button"
+  "product-1 product-2 product-3 product-4 product-5 product-6"
+  "product-7 product-8 product-9 product-10 product-11 product-12"
+ 
+}
+.container img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 10px;
+}
+[class^="product"] {
+    background-color: #f2f2f2;
+    border: 0.5px solid #ccc;
+    border-radius: 10px;
+    padding: 12px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    transition: 0.2s;
+}
+
+[class^="product-"] button{
+    padding: 8px 12px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+[class^="product-"] button:first-of-type {
+    background-color: #2563eb;
+    color: white;
+    transition: 2s;
+}
+
+[class^="product-"] button:first-of-type:hover {
+    background-color: #13327f;
+    transform: scale(1.05);
+}
+
+/* Details button */
+[class^="product-"] button:last-of-type {
+    background-color: #ddd;
+    color: #222;
+    transition: 1s;
+}
+[class^="product-"] button:last-of-type:hover {
+    background-color: #656972;
+    transform: scale(1.05);
+}
+
+[class^="button"] button{
+  padding: 8px 12px;
+  margin:3px;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  background-color:#2563eb;
+  color:white
+}
+[class^="button"] button:hover{
+   background-color: #13327f;
+    transform: scale(1.05);
+}
+
+
+.header{
+  grid-area:header;
+  text-align: center;
+  align-items: center;
+}
+.button{
+  margin-top: 10px;
+  padding:10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+.title{
+  font-size: 50px;
+  padding: 100px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+.button{
+  grid-area:button;
+}
+.product-1{
+  grid-area:product-1;
+}
+.product-2{
+  grid-area:product-2;
+}
+.product-3{
+  grid-area:product-3;
+}
+.product-4{
+  grid-area:product-4;
+}
+.product-5{
+  grid-area:product-5;
+}
+.product-6{
+  grid-area:product-6;
+}
+.product-7{
+  grid-area:product-7;
+}
+.product-8{
+  grid-area:product-8;
+}
+.product-9{
+  grid-area:product-9;
+}
+.product-10{
+  grid-area:product-10;
+}
+.product-11{
+  grid-area:product-11;
+}
+.product-12{
+  grid-area:product-12;
+}
